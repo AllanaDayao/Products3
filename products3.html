@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title> Products - Task 3 </title>
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        body {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            margin: 15px;
+        }
+
+        #Filter {
+            padding: 15px;
+        }
+
+        #Filter:hover {
+            background-color: rgb(185, 191, 196);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="result"></div>
+
+    <!-- drop down listing  categories-->
+    <select id="categories"></select>
+    <button id="Filter">Filter </button>
+
+    <script language="javascript">
+
+        window.onload = function () {
+
+            // getting categories and adding it to drop down options
+            allProducts = [];
+            $.get("products.json", function (data) {
+                allProducts = data;
+                categories = [];
+
+                // each product's category is pushed to array of categories
+                // without repetition
+                allProducts.forEach(function (data) {
+                    data.categories.forEach(function (category) {
+
+                        if (!categories.includes(category)) {
+                            categories.push(category);
+                        }
+                    })
+                });
+
+                // adding category options to drop down
+                options = "<option value = ''> Select Category </option>";
+                categories.forEach(function (category) {
+                    options += "<option value='" + category + "'>" + category + "</option>";
+                });
+                document.getElementById("categories").innerHTML = options;
+
+            });
+
+
+            // add event listener to Filter button
+            filterBtn = document.getElementById("Filter");
+            filterBtn.addEventListener("click", function () {
+
+                selectedCategory = document.getElementById("categories").value;
+
+                // filter products and match with selectedCategory
+                matches = allProducts.filter(item => item.categories.includes(selectedCategory));
+
+                // displays matches
+                str = "<ul class>";
+                matches.forEach(function (product) {
+                    str += "<li>" + product.name + "</li>";
+                });
+                str += "</ul>"
+
+                document.getElementById("result").innerHTML = str;
+
+            })
+
+        };
+
+    </script>
+</body>
+</html>

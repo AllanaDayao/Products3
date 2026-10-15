@@ -4,8 +4,8 @@
         "description": "Classic brown leather jacket with pocketss and zippers",
         "price": "$80",
         "categories": [
-            "clothing",
-            "outerwear"
+            "Clothing",
+            "Outerwear"
         ]
     },
     {
@@ -13,9 +13,9 @@
         "description": "New maple wood skateboard with graffiti designs",
         "price": "$70",
         "categories": [
-            "sports",
-            "outdoor",
-            "recreation"
+            "Sports",
+            "Outdoor",
+            "Recreation"
         ]
     },
     {
@@ -23,8 +23,8 @@
         "description": "Health and fitness tracking watch with phone call and texting capabilities",
         "price": "$150",
         "categories": [
-            "electronics",
-            "accessories"
+            "Electronics",
+            "Accessories"
         ]
     },
     {
@@ -32,8 +32,8 @@
         "description": "High performance windows laptop with long lasting battery life",
         "price": "$900",
         "categories": [
-            "electronics",
-            "office"
+            "Electronics",
+            "Office"
         ]
     },
     {
@@ -41,18 +41,18 @@
         "description": "Hard cover Lined journal for notes",
         "price": "$10",
         "categories": [
-            "office",
-            "school",
-            "stationery"
+            "Office",
+            "School",
+            "Stationery"
         ]
     },
     {
         "name": "Sunglasses",
         "description": "Tinted fashion sunglases",
-        "price": "15",
+        "price": "$15",
         "categories": [
             "Accessories",
-            "clothing"
+            "Clothing"
         ]
     },
     {
@@ -60,8 +60,9 @@
         "description": "Fast, versatile, and oil free air fryer",
         "price": "$80",
         "categories": [
-            "kitchen",
-            "appliances"
+            "Kitchen",
+            "Appliances",
+            "Home"
         ]
     },
     {
@@ -69,8 +70,8 @@
         "description": "Waterproof with adjustable audio settins and vibrant colors wireless speaker",
         "price": "$50",
         "categories": [
-            "electronics",
-            "audio"
+            "Electronics",
+            "Audio"
         ]
     },
     {
@@ -78,8 +79,8 @@
         "description": "Lifestyle shoes that are breathable and durable",
         "price": "$75",
         "categories": [
-            "clothing",
-            "footweear"
+            "Clothing",
+            "Footwear"
         ]
     },
     {
@@ -87,9 +88,9 @@
         "description": "Eco-friendly, thick, and with excellent tractiion yoga mats",
         "price": "$20",
         "categories": [
-            "fitness",
-            "sports",
-            "home"
+            "Fitness",
+            "Sports",
+            "Home"
         ]
     }
 ]
